@@ -11,7 +11,6 @@ export default function GuestLayout() {
     return(
         <div>
             <div>
-                For guest users only
                 {/* //!render login or signup */}
                 {/* //!outlet will be the place where we will render the child route */}
                 <Outlet />

@@ -6,6 +6,7 @@ export default function DefaultLayout() {
 
     const {user, token} = useStateContext();  
     
+    //! if the user has no access token, they will be redirected to the login page  
     if(!token) {
         return <Navigate to="/login" />
     }
@@ -30,7 +31,7 @@ export default function DefaultLayout() {
                         Header
                     </div>
                     <div>
-                        {user.name}
+                        {user.name}   
                         <a href="#" onClick={onLogout} className="btn-logout" ></a>
                     </div>
 
